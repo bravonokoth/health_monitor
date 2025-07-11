@@ -19,13 +19,19 @@ const Dashboard: React.FC = () => {
     return value >= min && value <= max
   }
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-cyan-600"></div>
+if (loading) {
+  return (
+    <div className="p-6 lg:p-8 w-full">
+      <div className="max-w-7xl mx-auto">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-cyan-600" />
       </div>
-    )
-  }
+    </div>
+  )
+}
+
+
+
+
 
   return (
     <motion.div

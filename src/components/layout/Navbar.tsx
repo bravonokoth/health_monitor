@@ -45,42 +45,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
               <Menu className="h-6 w-6" />
             </Button>
             
-            <Link to="/dashboard" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">H</span>
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
-                HealthMonitor
-              </span>
-            </Link>
+            
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/dashboard" 
-              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium"
-            >
-              Dashboard
-            </Link>
-            <Link 
-              to="/health-data" 
-              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium"
-            >
-              Health Data
-            </Link>
-            <Link 
-              to="/add-health-data" 
-              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium"
-            >
-              Add Data
-            </Link>
-            <Link 
-              to="/profile" 
-              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium"
-            >
-              Profile
-            </Link>
-          </div>
 
           <div className="flex items-center space-x-4">
             <Button
