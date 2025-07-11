@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, Heart, User, X } from 'lucide-react'
+import { Home, Heart, User, X, Plus } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -14,6 +14,7 @@ interface SidebarProps {
 const sidebarItems = [
   { name: 'Dashboard', href: '/dashboard', icon: Home },
   { name: 'Health Data', href: '/health-data', icon: Heart },
+  { name: 'Add Health Data', href: '/add-health-data', icon: Plus },
   { name: 'Profile', href: '/profile', icon: User },
 ]
 

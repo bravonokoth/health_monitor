@@ -69,6 +69,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
               Health Data
             </Link>
             <Link 
+              to="/add-health-data" 
+              className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium"
+            >
+              Add Data
+            </Link>
+            <Link 
               to="/profile" 
               className="text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium"
             >

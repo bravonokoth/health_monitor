@@ -9,6 +9,7 @@ import { ThemeProvider } from '@/contexts/ThemeContext'
 import { ProtectedRoute } from '@/components/ProtectedRoute'
 import Dashboard from '@/pages/Dashboard'
 import HealthData from '@/pages/HealthData'
+import AddHealthData from '@/pages/AddHealthData'
 import Profile from '@/pages/Profile'
 import Login from '@/pages/Login'
 import Signup from '@/pages/Signup'
@@ -40,6 +41,14 @@ const App: React.FC = () => {
                 element={
                   <ProtectedRoute>
                     <HealthData />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/add-health-data"
+                element={
+                  <ProtectedRoute>
+                    <AddHealthData />
                   </ProtectedRoute>
                 }
               />
